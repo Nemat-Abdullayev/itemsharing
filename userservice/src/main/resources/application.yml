@@ -2,9 +2,9 @@ server:
   port: 8088
 spring:
   datasource:
-    username: ALL_DOC_SEARCHES
+    username: blabla
     password: 123
-    url: jdbc:oracle:thin:@10.2.45.27:1521:dev
+    url: jdbc:oracle:thin:@localhost:1521:orcl
     driver-class-name: oracle.jdbc.driver.OracleDriver
   jpa:
     database-platform: az.itemsharing.userservice.config.CustomOracleDialect
