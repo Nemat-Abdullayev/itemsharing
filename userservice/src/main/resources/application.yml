@@ -1,0 +1,17 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    username: ALL_DOC_SEARCHES
+    password: 123
+    url: jdbc:oracle:thin:@10.2.45.27:1521:dev
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    database-platform: az.itemsharing.userservice.config.CustomOracleDialect
+    database: ORACLE
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
